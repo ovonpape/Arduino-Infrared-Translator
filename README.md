@@ -1,3 +1,5 @@
 This project will translate the IR signal of a remote to control a different device. 
 
-Circuit diagrams and instructions will be added soon.
+![Board Design](images/Board.png)
+
+![Wiring Diagram](images/Schematic.png)

@@ -2,7 +2,7 @@
 #include <avr/sleep.h>
 
 const int RECV_PIN = 2; // Data Pin of the IR-Receiver
-const int SEND_PIN = 5; // Base Pin of the Transistor used to drive the IR-LED. You can try to drive the LED directly but it might affect signal strenght
+const int SEND_PIN = 3; // Base Pin of the Transistor used to drive the IR-LED. You can try to drive the LED directly but it might affect signal strenght
 
 // Protocol and Address that are Sent by the remote control you want to use
 const decode_type_t INCOMING_PROTOCOL = NEC;
@@ -13,7 +13,7 @@ const decode_type_t SENDING_PROTOCOL = NEC;
 const uint16_t SENDING_ADDRESS = 2;
 
 // DEBUGGING_MODE controls the output of the received signals. By activating this, you can obtain the commands that are sent/expected by your device and remote control (via Serial Monitor)
-const bool DEBUGGING_MODE = false;
+const bool DEBUGGING_MODE = true;
 
 // Commands that are expected from the device to be controlled.
 // These specific values were obtained from the remote of a SilverCrest Soundbar.
